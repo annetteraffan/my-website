@@ -7,6 +7,9 @@ import { defineConfig, fontProviders } from 'astro/config';
 // https://astro.build/config
 export default defineConfig({
 	site: 'https://example.com',
+	image: {
+		service: {entrypoint: 'astro/assets/services/noop'}
+	}
 	integrations: [mdx(), sitemap()],
 	fonts: [
 		{
